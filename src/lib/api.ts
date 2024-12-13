@@ -52,7 +52,7 @@ export const api = {
   },
 
   async getProductByBarcode(barcode: string): Promise<Product> {
-    const response = await axios.get(`${BASE_URL}/api/v0/product/${barcode}.json`);
+    const response = await axios.get(`${BASE_URL}/api/v3/product/${barcode}.json`);
     return response.data.product;
   },
 
