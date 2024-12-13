@@ -6,9 +6,11 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 
+export type SortOption = 'name-asc' | 'name-desc' | 'grade-asc' | 'grade-desc';
+
 interface SortFilterProps {
-  value: string;
-  onChange: (value: string) => void;
+  value: SortOption;
+  onChange: (value: SortOption) => void;
 }
 
 export function SortFilter({ value, onChange }: SortFilterProps) {

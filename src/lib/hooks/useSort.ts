@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Product } from '@/lib/api';
-
-type SortOption = 'name-asc' | 'name-desc' | 'grade-asc' | 'grade-desc';
+import { type SortOption } from '@/components/filters/SortFilter';
 
 export function useSort() {
   const [sortBy, setSortBy] = useState<SortOption>('name-asc');
