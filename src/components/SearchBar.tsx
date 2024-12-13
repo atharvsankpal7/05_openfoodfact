@@ -23,7 +23,7 @@ export function SearchBar({ onSearch, onBarcodeSearch }: SearchBarProps) {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 w-full">
       <form onSubmit={handleSearch} className="flex gap-2">
         <Input
           placeholder="Search products..."
